@@ -1,4 +1,4 @@
-#include "viz/Pointclouds.h"
+#include "ecsviz/Pointclouds.h"
 #include <sokol/HandmadeMath.h>
 #include <assert.h>
 

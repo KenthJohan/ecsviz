@@ -14,25 +14,25 @@
  * dependencies will automatically show up in this file. Include bake_config.h
  * in your main project file. Do not edit! */
 
-#ifndef EASYMATH_BAKE_CONFIG_H
-#define EASYMATH_BAKE_CONFIG_H
+#ifndef ECSVIZ_BAKE_CONFIG_H
+#define ECSVIZ_BAKE_CONFIG_H
 
 /* Headers of public dependencies */
-/* No dependencies */
+#include <flecs.h>
 
 /* Convenience macro for exporting symbols */
-#ifndef easymath_STATIC
-#if defined(easymath_EXPORTS) && (defined(_MSC_VER) || defined(__MINGW32__))
-  #define EASYMATH_API __declspec(dllexport)
-#elif defined(easymath_EXPORTS)
-  #define EASYMATH_API __attribute__((__visibility__("default")))
+#ifndef ecsviz_STATIC
+#if defined(ecsviz_EXPORTS) && (defined(_MSC_VER) || defined(__MINGW32__))
+  #define ECSVIZ_API __declspec(dllexport)
+#elif defined(ecsviz_EXPORTS)
+  #define ECSVIZ_API __attribute__((__visibility__("default")))
 #elif defined(_MSC_VER)
-  #define EASYMATH_API __declspec(dllimport)
+  #define ECSVIZ_API __declspec(dllimport)
 #else
-  #define EASYMATH_API
+  #define ECSVIZ_API
 #endif
 #else
-  #define EASYMATH_API
+  #define ECSVIZ_API
 #endif
 
 #endif

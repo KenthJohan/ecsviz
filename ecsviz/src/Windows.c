@@ -1,4 +1,4 @@
-#include "viz/Windows.h"
+#include "ecsviz/Windows.h"
 
 #include <sokol/sokol_app.h>
 

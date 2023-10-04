@@ -1,16 +1,14 @@
-#include "viz/DrawPoints.h"
-#include "viz/Cameras.h"
-#include "viz/Windows.h"
-#include "viz/Pointclouds.h"
-#include "viz/Sg.h"
-#include "viz/vs_params.h"
+#include "ecsviz/DrawPoints.h"
+#include "ecsviz/Cameras.h"
+#include "ecsviz/Windows.h"
+#include "ecsviz/Pointclouds.h"
+#include "ecsviz/Sg.h"
+#include "ecsviz/vs_params.h"
 #include <sokol/sokol_gfx.h>
 #include <sokol/sokol_debugtext.h>
 #include <sokol/sokol_app.h>
 #include <sokol/HandmadeMath.h>
 #include <sokol/align.h>
-#include <platform/log.h>
-#include <platform/fs.h>
 
 #define NUM_X (32)
 #define NUM_Y (32)

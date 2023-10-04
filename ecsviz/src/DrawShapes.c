@@ -2,14 +2,16 @@
 //  shapes-sapp.c
 //  Simple sokol_shape.h demo.
 //------------------------------------------------------------------------------
-#include "viz/DrawShapes.h"
-#include "viz/Geometries.h"
-#include "viz/Cameras.h"
-#include "viz/Windows.h"
-#include "viz/Pointclouds.h"
-#include "viz/Sg.h"
-#include "viz/vs_params.h"
-#include "viz/GraphicsShapes.h"
+#include "ecsviz/DrawShapes.h"
+#include "ecsviz/Geometries.h"
+#include "ecsviz/Cameras.h"
+#include "ecsviz/Windows.h"
+#include "ecsviz/Pointclouds.h"
+#include "ecsviz/Sg.h"
+#include "ecsviz/vs_params.h"
+#include "ecsviz/GraphicsShapes.h"
+#include "ecsviz_fs.h"
+#include "ecsviz_log.h"
 
 #include <sokol/sokol_gfx.h>
 #include <sokol/sokol_gl.h>
@@ -20,18 +22,16 @@
 #include <sokol/align.h>
 
 
-#include <easymath/mathtypes.h>
-#include <easymath/lin_f32.h>
-#include <easymath/quat_f32.h>
-#include <easymath/transform.h>
+#include <lwmath/mathtypes.h>
+#include <lwmath/lin_f32.h>
+#include <lwmath/quat_f32.h>
+#include <lwmath/transform.h>
 
 #include <math.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <stdio.h>
 
-#include <platform/fs.h>
-#include <platform/log.h>
 
 
 

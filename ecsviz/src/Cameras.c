@@ -1,14 +1,14 @@
-#include "viz/Cameras.h"
-#include "viz/Userinputs.h"
-#include "viz/Geometries.h"
+#include "ecsviz/Cameras.h"
+#include "ecsviz/Userinputs.h"
+#include "ecsviz/Geometries.h"
 
 #include <sokol/HandmadeMath.h>
 #include <sokol/sokol_app.h>
 
-#include <easymath/mathtypes.h>
-#include <easymath/lin_f32.h>
-#include <easymath/quat_f32.h>
-#include <easymath/transform.h>
+#include <lwmath/mathtypes.h>
+#include <lwmath/lin_f32.h>
+#include <lwmath/quat_f32.h>
+#include <lwmath/transform.h>
 #include <stdio.h>
 
 ECS_COMPONENT_DECLARE(CamerasCamera);

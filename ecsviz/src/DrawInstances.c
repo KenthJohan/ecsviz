@@ -1,12 +1,14 @@
-#include "viz/DrawInstances.h"
-#include "viz/Geometries.h"
-#include "viz/Cameras.h"
-#include "viz/Windows.h"
-#include "viz/Pointclouds.h"
-#include "viz/Sg.h"
-#include "viz/vs_params.h"
-#include "viz/misc.h"
-#include "viz/GraphicsShapes.h"
+#include "ecsviz/DrawInstances.h"
+#include "ecsviz/Geometries.h"
+#include "ecsviz/Cameras.h"
+#include "ecsviz/Windows.h"
+#include "ecsviz/Pointclouds.h"
+#include "ecsviz/Sg.h"
+#include "ecsviz/vs_params.h"
+#include "ecsviz/misc.h"
+#include "ecsviz/GraphicsShapes.h"
+#include "ecsviz_fs.h"
+#include "ecsviz_log.h"
 
 #include <sokol/sokol_gfx.h>
 #include <sokol/sokol_gl.h>
@@ -21,8 +23,6 @@
 #include <assert.h>
 #include <stdio.h>
 
-#include <platform/fs.h>
-#include <platform/log.h>
 
 
 typedef struct

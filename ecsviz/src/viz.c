@@ -1,6 +1,6 @@
-#include "viz/viz.h"
-#include "viz/Userinputs.h"
-#include "viz/Windows.h"
+#include "ecsviz/viz.h"
+#include "ecsviz/Userinputs.h"
+#include "ecsviz/Windows.h"
 
 #include <sokol/sokol_app.h>
 #include <sokol/sokol_gfx.h>

@@ -1,4 +1,4 @@
-#include "viz/Userinputs.h"
+#include "ecsviz/Userinputs.h"
 
 ECS_COMPONENT_DECLARE(UserinputsKeys);
 

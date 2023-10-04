@@ -18,7 +18,7 @@
 #define SOKOL_BAKE_CONFIG_H
 
 /* Headers of public dependencies */
-#include <flecs.h>
+/* No dependencies */
 
 /* Convenience macro for exporting symbols */
 #ifndef sokol_STATIC

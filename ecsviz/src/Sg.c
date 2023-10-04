@@ -1,10 +1,10 @@
-#include "viz/Sg.h"
-#include "viz/Windows.h"
-#include "viz/Userinputs.h"
-#include "viz/misc.h"
-#include <platform/log.h>
-#include <platform/fs.h>
-#include <platform/assert.h>
+#include "ecsviz/Sg.h"
+#include "ecsviz/Windows.h"
+#include "ecsviz/Userinputs.h"
+#include "ecsviz/misc.h"
+#include "ecsviz_fs.h"
+#include "ecsviz_log.h"
+#include "ecsviz_assert.h"
 #include <sokol/sokol_shape.h>
 #include <stdio.h>
 
@@ -116,8 +116,8 @@ void iterate_shader_uniforms(ecs_world_t * world, ecs_entity_t parent, sg_shader
 			char const * name = ecs_get_name(world, e);
 			SgUniform const * uniform = ecs_get(world, e, SgUniform);
 			SgUniformType const * type = ecsx_get_target_data(world, e, ecs_id(SgUniformType));
-			platform_assert_notnull(uniform);
-			platform_assert_notnull(type);
+			ecsviz_assert_notnull(uniform);
+			ecsviz_assert_notnull(type);
 			descs[uniform->index].name = name;
 			descs[uniform->index].array_count = uniform->array_count;
 			descs[uniform->index].type = type->value;
@@ -193,7 +193,7 @@ void iterate_vertex_attrs(ecs_world_t * world, ecs_entity_t parent, sg_vertex_at
 			if(ecs_has_pair(world, e, ecs_id(SgVertexFormat), EcsWildcard))
 			{
 				SgVertexFormat const * format = ecsx_get_target_data(world, e, ecs_id(SgVertexFormat));
-				platform_assert_notnull(format);
+				ecsviz_assert_notnull(format);
 				outstate->format = format->value;
 			}
 			else
@@ -255,9 +255,9 @@ void Pip_Create(ecs_iter_t *it)
 		SgPrimitiveType const * primitive_type = ecsx_get_target_data(world, e, ecs_id(SgPrimitiveType));
 		SgCullMode const * cull_mode = ecsx_get_target_data(world, e, ecs_id(SgCullMode));
 
-		platform_assert_notnull(index_type);
-		platform_assert_notnull(primitive_type);
-		platform_assert_notnull(cull_mode);
+		ecsviz_assert_notnull(index_type);
+		ecsviz_assert_notnull(primitive_type);
+		ecsviz_assert_notnull(cull_mode);
 
 		sg_pipeline_desc desc = {
 			.shader = shader->id,
@@ -298,8 +298,8 @@ void Shader_Create(ecs_iter_t *it)
 		desc.fs.source = fs_readfile(create->filename_fs);
 		desc.vs.entry = "main";
 		desc.fs.entry = "main";
-		platform_assert_notnull(desc.vs.source);
-		platform_assert_notnull(desc.fs.source);
+		ecsviz_assert_notnull(desc.vs.source);
+		ecsviz_assert_notnull(desc.fs.source);
 		//shader->id = create_shader(desc->filename_fs, desc->filename_vs);
 		iterate_shader_attrs(world, entity_attrs, desc.attrs);
 		iterate_shader_blocks(world, entity_blocks, desc.vs.uniform_blocks);
@@ -307,7 +307,7 @@ void Shader_Create(ecs_iter_t *it)
 
 		sg_shader shd = sg_make_shader(&desc);
 		shader->id = shd;
-		platform_log("");
+		ecsviz_log("");
 	}
 }
 

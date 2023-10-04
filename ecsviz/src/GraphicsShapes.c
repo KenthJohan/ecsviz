@@ -1,14 +1,14 @@
-#include "viz/GraphicsShapes.h"
-#include "viz/Geometries.h"
-#include "viz/misc.h"
+#include "ecsviz/GraphicsShapes.h"
+#include "ecsviz/Geometries.h"
+#include "ecsviz/misc.h"
 
 #include <math.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <stdio.h>
 
-#include <platform/fs.h>
-#include <platform/log.h>
+#include "ecsviz_fs.h"
+#include "ecsviz_log.h"
 
 
 ECS_COMPONENT_DECLARE(ShapeBufferImpl);

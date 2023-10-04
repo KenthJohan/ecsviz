@@ -1,4 +1,4 @@
-#include "viz/Geometries.h"
+#include "ecsviz/Geometries.h"
 #include <assert.h>
 
 ECS_COMPONENT_DECLARE(ShapeBuffer);

@@ -1,6 +1,6 @@
-#include "viz/DrawText.h"
-#include "viz/Geometries.h"
-#include "viz/Cameras.h"
+#include "ecsviz/DrawText.h"
+#include "ecsviz/Geometries.h"
+#include "ecsviz/Cameras.h"
 #include <sokol/sokol_gfx.h>
 #include <sokol/sokol_debugtext.h>
 #include <sokol/sokol_app.h>

@@ -1,6 +1,6 @@
 #pragma once
 #include <flecs.h>
-#include <easymath/mathtypes.h>
+#include <lwmath/mathtypes.h>
 
 typedef struct
 {
