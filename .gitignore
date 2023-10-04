@@ -1,0 +1,7 @@
+*.log
+*.csv
+*.pcap
+*.cache
+*.a
+*.o
+*.png
