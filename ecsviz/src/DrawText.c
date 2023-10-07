@@ -25,7 +25,7 @@ static void RenderText(ecs_iter_t *it)
 
 static void Update0(ecs_iter_t *it)
 {
-	sdtx_canvas(sapp_width() / 10, sapp_height() / 10);
+	sdtx_canvas(sapp_width(), sapp_height());
 }
 
 static void Update1(ecs_iter_t *it)
