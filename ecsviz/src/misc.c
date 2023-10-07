@@ -1,5 +1,5 @@
 #include "ecsviz/misc.h"
-#include "ecsviz_log.h"
+#include "ecsviz/ecsviz_log.h"
 
 void print_entity(ecs_world_t * world, ecs_entity_t e)
 {

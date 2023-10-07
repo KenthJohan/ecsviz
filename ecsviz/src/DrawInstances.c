@@ -7,8 +7,8 @@
 #include "ecsviz/vs_params.h"
 #include "ecsviz/misc.h"
 #include "ecsviz/GraphicsShapes.h"
-#include "ecsviz_fs.h"
-#include "ecsviz_log.h"
+#include "ecsviz/ecsviz_fs.h"
+#include "ecsviz/ecsviz_log.h"
 
 #include <sokol/sokol_gfx.h>
 #include <sokol/sokol_gl.h>

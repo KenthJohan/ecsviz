@@ -1,4 +1,4 @@
-#include "ecsviz_assert.h"
+#include "ecsviz/ecsviz_assert.h"
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>

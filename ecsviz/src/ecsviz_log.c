@@ -1,4 +1,4 @@
-#include "ecsviz_log.h"
+#include "ecsviz/ecsviz_log.h"
 #include <stdarg.h>
 #include <stdio.h>
 #include <assert.h>

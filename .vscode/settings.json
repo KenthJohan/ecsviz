@@ -1,0 +1,29 @@
+{
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.fontSize": 14,
+	"terminal.integrated.fontSize": 14,
+	"window.zoomLevel": 1.3,
+	"files.associations": {
+		"viz.h": "c",
+		"ecsviz_assert.h": "c",
+		"sg.h": "c",
+		"ecsviz_fs.h": "c",
+		"ecsviz_log.h": "c",
+		"stdio.h": "c",
+		"stdint.h": "c",
+		"stdlib.h": "c",
+		"assert.h": "c",
+		"misc.h": "c",
+		"sokol_gl.h": "c",
+		"sokol_shape.h": "c",
+		"stdarg.h": "c",
+		"sokol_log.h": "c",
+		"sokol_debugtext.h": "c",
+		"sokol_gfx.h": "c"
+	},
+	"terminal.integrated.env.linux": {
+		"GTK_PATH": ""
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"configurations": [
+		{
+			"name": "Linux",
+			"includePath": [
+				"${HOME}/bake/include"
+			],
+			"defines": [],
+			"compilerPath": "/usr/bin/gcc",
+			"cStandard": "c17",
+			"cppStandard": "c++20",
+			"intelliSenseMode": "clang-x64"
+		},
+	],
+	"version": 4
+}

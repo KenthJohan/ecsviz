@@ -7,8 +7,8 @@
 #include <assert.h>
 #include <stdio.h>
 
-#include "ecsviz_fs.h"
-#include "ecsviz_log.h"
+#include "ecsviz/ecsviz_fs.h"
+#include "ecsviz/ecsviz_log.h"
 
 
 ECS_COMPONENT_DECLARE(ShapeBufferImpl);
